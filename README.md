@@ -42,6 +42,9 @@
     - 마침표를 붙이지 않음
     - 50자를 넘기지 않음
 
+- **BRANCH_NAME**
+cralwer, preprocess, modeling, api  
+  
 ### etc
 subject: 과거형은 쓰지 않는다. fixed -> fix  
 type: 대문자는 쓰지 않는다.  
