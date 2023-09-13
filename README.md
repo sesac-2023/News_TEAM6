@@ -42,7 +42,7 @@
     - 마침표를 붙이지 않음
     - 50자를 넘기지 않음
 
-- **BRANCH_NAME**
+- **BRANCH_NAME**  
 cralwer, preprocess, modeling, api  
   
 ### etc
