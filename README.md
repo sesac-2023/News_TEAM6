@@ -37,7 +37,7 @@
     - 50자를 넘기지 않음
 
 - **BRANCH_NAME**  
-cralwer, preprocess, modeling, api  
+crawler, preprocess, modeling, api  
   
 ### etc
 subject: 과거형은 쓰지 않는다. fixed -> fix  
