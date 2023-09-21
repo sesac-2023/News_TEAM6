@@ -5,7 +5,7 @@ import pandas as pd
 import pickle 
 
 # df_news 불러오기 
-with open('../dataset/df_news.pkl', 'rb') as f:    # 경로주의
+with open('../dataset/fin_df.pkl', 'rb') as f:    # 경로주의
     df_news = pickle.load(f)
 
 # 형태소 분석
@@ -23,4 +23,4 @@ model.build_vocab(tagged_df)
 model.train(tagged_df, total_examples=model.corpus_count, epochs=model.epochs)
 
 # 학습된 모델 저장
-model.save('doc2vec_news_model.model')
+model.save('doc2vec_fin_model.model')
