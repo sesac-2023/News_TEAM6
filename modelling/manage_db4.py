@@ -3,8 +3,7 @@ try:
     import pymysql
 except:
     raise Exception('you need to install pymysql\n$ : python -m pip install pymysql')
-import traceback, json, re
-import numpy as np
+import traceback, json, re, numpy as np
 
 """
 사용할 라이브러리 : pymysql, pandas
@@ -119,9 +118,6 @@ class NewsDB:
                     cur.execute('select * from CATEGORY')
                     tmp = cur.fetchall()
                 self.SUB_CATEGORY_DF = pd.DataFrame(tmp, columns=['cat2_id', 'cat1_name', 'cat2_name', 'platform_name'])
-
-
-            
 
         # DML은 별도 commit 필요!
         self.remote.commit()
@@ -357,7 +353,7 @@ class NewsDB:
                 offset += 100000 # LIMIT
         
         df = pd.DataFrame(final_result, columns=columns_name)
-        if 'cat2_id' in columns_name:
+        if ('cat2_id' in columns_name) and (tmp_SUB_CATEGORY_DF is not None):
             tmp_SUB_CATEGORY_DF = self.SUB_CATEGORY_DF[self.SUB_CATEGORY_DF.cat2_id.isin(df.cat2_id.unique())]
             df = pd.merge(df, tmp_SUB_CATEGORY_DF, 'left', 'cat2_id')
             for col in ['platform_name', 'cat2_name', 'cat1_name']:
