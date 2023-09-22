@@ -1,4 +1,50 @@
-# News_TEAM6
+# 📰뉴스 추천 시스템
+
+## 📢 프로젝트 개요
+     뉴스 기사 및 댓글 데이터를 크롤링하고 이를 바탕으로 추천 시스템을 구축하여 
+    사용자의 관심사와 비슷한 뉴스를 추천합니다. 
+
+## 🗓️ 프로젝트 기간 
+2023년 9월 13일(수) ~ 2023년 9월 22일(금)
+
+## 📝 프로젝트 파이프라인 
+<img src="https://github.com/sesac-2023/News_TEAM_6/assets/138412359/89f03c46-0a10-492b-a745-d1d2ddf68b0a" width="600" height="350"/>
+
+## 폴더별 설명
+- crawler : scrapy를 이용해 네이버와 다음의 뉴스 기사를 크롤링
+- django_api : 개발 모델을 이용한 기사 추천 시스템 django_api 배포
+- modelling : doc2vec 모델을 이용한 컨텐츠 기반 필터링
+- preprocess : 크롤링한 기사들 전처리
+
+## 기능명세서
+- 뉴스 추천 홈페이지 => 임의의 뉴스 20개 리스트 노출
+- 상세 뉴스 페이지 => 선택 뉴스의 본문 노출
+- 추천 뉴스 페이지 => 콘텐츠 기반 필터링 추천 뉴스 20개 리스트 노출
+
+## api 명세서
+- 뉴스 추천 홈페이지 => URL: news / DATA: {cat2: int, title: string}
+- 상세 뉴스 페이지 => URL: news/<int:pk> / DATA: {cat2: int, title: string, content: string}
+- 추천 뉴스 페이지 => URL: news/int:pk/recommend / DATA: {title: string}
+
+<img src="https://github.com/sesac-2023/News_TEAM_6/assets/138412359/d97aa14c-d2ef-463d-9dff-dfda9629da8c" width="300" height="400"/>
+<img src="https://github.com/sesac-2023/News_TEAM_6/assets/138412359/f5c5eaa7-5c62-4ee3-86eb-783acf061c97" width="300" height="400"/>
+
+
+
+
+## <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> 팀주소
+- https://malachite-sugar-318.notion.site/81803ba363b94a5297050016e3a85880?pvs=4
+
+## 🤼‍♂️ 팀명 : World_News_TEAM
+- 정준화 = email: behappy_jh@naver.com / github: https://github.com/JunHwa1
+- 이종혁 = xhxhfh333@hanmail.net / github: https://github.com/wonder1ng
+- 서지은 = wldms7258@gmail.com / github: https://github.com/jinny0203
+- 장우진 = jwj1206@gmail.com / github: https://github.com/jwj1206
+
+
+
+
+
 
 ## 컨벤션
 ### Code Convention
