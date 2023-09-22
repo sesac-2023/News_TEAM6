@@ -10,18 +10,18 @@
 ## 📝 프로젝트 파이프라인 
 <img src="https://github.com/sesac-2023/News_TEAM_6/assets/138412359/89f03c46-0a10-492b-a745-d1d2ddf68b0a" width="600" height="350"/>
 
-## 폴더별 설명
+## 🗂️폴더별 설명
 - crawler : scrapy를 이용해 네이버와 다음의 뉴스 기사를 크롤링
 - django_api : 개발 모델을 이용한 기사 추천 시스템 django_api 배포
 - modelling : doc2vec 모델을 이용한 컨텐츠 기반 필터링
 - preprocess : 크롤링한 기사들 전처리
 
-## 기능명세서
+## 📄기능명세서
 - 뉴스 추천 홈페이지 => 임의의 뉴스 20개 리스트 노출
 - 상세 뉴스 페이지 => 선택 뉴스의 본문 노출
 - 추천 뉴스 페이지 => 콘텐츠 기반 필터링 추천 뉴스 20개 리스트 노출
 
-## api 명세서
+## 📄api 명세서
 - 뉴스 추천 홈페이지 => URL: news / DATA: {cat2: int, title: string}
 - 상세 뉴스 페이지 => URL: news/<int:pk> / DATA: {cat2: int, title: string, content: string}
 - 추천 뉴스 페이지 => URL: news/int:pk/recommend / DATA: {title: string}
@@ -36,11 +36,15 @@
 - https://malachite-sugar-318.notion.site/81803ba363b94a5297050016e3a85880?pvs=4
 
 ## 🤼‍♂️ 팀명 : World_News_TEAM
-- 정준화 = email: behappy_jh@naver.com / github: https://github.com/JunHwa1
-- 이종혁 = xhxhfh333@hanmail.net / github: https://github.com/wonder1ng
-- 서지은 = wldms7258@gmail.com / github: https://github.com/jinny0203
-- 장우진 = jwj1206@gmail.com / github: https://github.com/jwj1206
+- **정준화** = **email**: behappy_jh@naver.com / **github**: https://github.com/JunHwa1
+- **이종혁** = **email**: xhxhfh333@hanmail.net / **github**: https://github.com/wonder1ng
+- **서지은** = **email**: wldms7258@gmail.com / **github**: https://github.com/jinny0203
+- **장우진** = **email**: jwj1206@gmail.com / **github**: https://github.com/jwj1206
 
+## 참고자료
+- **블로그**
+    - https://colinch4.github.io/2023-09-06/15-42-26-331788/ - [COLIN’S BLOG] Gensim Doc2Vec 모델 생성 및 학습
+    - https://sosoeasy.tistory.com/325 - [씩씩한 IT블로그] gensim라이브러리로 학습한 doc2vec모델의 함수들
 
 
 
